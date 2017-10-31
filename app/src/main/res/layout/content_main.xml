@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.locationservice.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOCATE FRIENDS"
+        android:id="@+id/location_button"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_button"
+        android:text="GET NEWS"
+        android:id="@+id/news_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIGURATION"
+        android:id="@+id/configure_main_button"
+        android:layout_below="@+id/news_button"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_full_name"
+        android:text="user_full_name: "
+        android:layout_alignParentTop="true"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_full_name_update"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/user_full_name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name"
+        android:text="user_name: "
+        android:layout_below="@+id/user_full_name"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name_update"
+        android:layout_below="@+id/user_full_name"
+        android:layout_toEndOf="@+id/user_name"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_interests"
+        android:text="user_interests: "
+        android:layout_below="@+id/user_name"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_interests_update"
+        android:layout_below="@+id/user_name"
+        android:layout_toEndOf="@+id/user_interests"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_frequency"
+        android:text="user_frequency: "
+        android:layout_below="@+id/user_interests"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_frequency_update"
+        android:layout_below="@+id/user_interests"
+        android:layout_toEndOf="@+id/user_frequency"
+        />
+
+</RelativeLayout>

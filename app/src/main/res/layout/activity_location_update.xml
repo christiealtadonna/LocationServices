@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_location_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context="com.example.locationservice.LocationUpdateActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/find_friends_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter friends name"/>
+
+        <!-- add a background color to textview -->
+        <TextView
+            android:id="@+id/display_location"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textSize="20sp"
+            android:background="@android:color/darker_gray"
+            android:visibility="invisible"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/search_friends_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:text="SEARCH"/>
+
+</LinearLayout>
